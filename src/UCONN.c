@@ -292,41 +292,35 @@ void handle_tick(struct tm *tick_time, TimeUnits units_changed) {
        strcpy(time_format,"%I:%M");
      }
 
-  // Set Time of Day  
   strftime(time_text, sizeof(time_text), time_format, tick_time); 
-
-  if((strcmp(seconds_text,"00") == 0) || (FirstTime == 0)) {
-  FirstTime = 1;
-  
+ 
   // Kludge to handle lack of non-padded hour format string
   // for twelve hour clock.
   if (!clock_is_24h_style() && (time_text[0] == '0')) {
     memmove(time_text, &time_text[1], sizeof(time_text) - 1);
   }
- 
-//Set Day and Date
-  strftime(dayname_text, sizeof(dayname_text), "%a",    tick_time);
-  strftime(mmdd_text,    sizeof(mmdd_text),    date_format, tick_time); 
-  strftime(year_text,    sizeof(year_text),    "%Y",    tick_time); 
+  if((strcmp(seconds_text,"00") == 0) || (FirstTime == 0)) {
+      //Set Day and Date
+      strftime(dayname_text, sizeof(dayname_text), "%a",    tick_time);
+      strftime(mmdd_text,    sizeof(mmdd_text),    date_format, tick_time); 
+      strftime(year_text,    sizeof(year_text),    "%Y",    tick_time); 
    
-//Initialize
-
-  text_layer_set_text(text_dayname_layer, dayname_text);
-  text_layer_set_text(text_mmdd_layer, mmdd_text);
-  text_layer_set_text(text_year_layer, year_text);    
-
+      text_layer_set_text(text_dayname_layer, dayname_text);
+      text_layer_set_text(text_mmdd_layer, mmdd_text);
+      text_layer_set_text(text_year_layer, year_text);    
+  }
+  
 if (units_changed & DAY_UNIT) {
    // Only update the day name & date when it's changed. 
     text_layer_set_text(text_dayname_layer, dayname_text);
     text_layer_set_text(text_mmdd_layer, mmdd_text);
     text_layer_set_text(text_year_layer, year_text);    
   }
-  }
+  
  // Always update time of day
   text_layer_set_text(text_time_layer, time_text);
- 
+   FirstTime = 1;
 }
-
 
 void handle_deinit(void) {
   tick_timer_service_unsubscribe();
