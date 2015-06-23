@@ -10,6 +10,7 @@
         "media": [
             {
                 "file": "images/UCONN_BW_menu.png",
+                "menuIcon": true,
                 "name": "IMAGE_MENU_ICON",
                 "type": "png"
             },
@@ -48,7 +49,7 @@
         "basalt"
     ],
     "uuid": "e5813053-6944-4fef-8648-9e63f870d774",
-    "versionLabel": "4.10",
+    "versionLabel": "4.11",
     "watchapp": {
         "watchface": true
     }
