@@ -318,9 +318,11 @@ if (units_changed & DAY_UNIT) {
     text_layer_set_text(text_year_layer, year_text);    
   }
   
- // Always update time of day
-  text_layer_set_text(text_time_layer, time_text);
-   FirstTime = 1;
+ 
+ if((strcmp(seconds_text,"00") == 0) || (FirstTime == 0)) {
+     text_layer_set_text(text_time_layer, time_text); 
+  }   
+  FirstTime = 1;
 }
 
 void handle_deinit(void) {
