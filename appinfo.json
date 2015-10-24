@@ -9,20 +9,20 @@
     "resources": {
         "media": [
             {
-                "file": "images/menu_icon-UCONN-BW.png",
-                "menuIcon": true,
-                "name": "IMAGE_MENU_ICON",
-                "type": "png"
-            },
-            {
-                "file": "images/UCONN_Color.png",
-                "name": "IMAGE_UCONN_COLOR_LOGO",
-                "type": "png"
+                "file": "fonts/HelveNeuLig.ttf",
+                "name": "FONT_HELV_NEW_LIGHT_20",
+                "type": "font"
             },
             {
                 "characterRegex": "[:0-9]",
                 "file": "fonts/Roboto-Bold.ttf",
                 "name": "FONT_ROBOTO_BOLD_SUBSET_49",
+                "type": "font"
+            },
+            {
+                "characterRegex": "[:0-9]",
+                "file": "fonts/Roboto-Bold.ttf",
+                "name": "FONT_ROBOTO_BOLD_SUBSET_40",
                 "type": "font"
             },
             {
@@ -36,9 +36,15 @@
                 "type": "font"
             },
             {
-                "file": "fonts/HelveNeuLig.ttf",
-                "name": "FONT_HELV_NEW_LIGHT_20",
-                "type": "font"
+                "file": "images/menu_icon-UCONN-BW.png",
+                "menuIcon": true,
+                "name": "IMAGE_MENU_ICON",
+                "type": "png"
+            },
+            {
+                "file": "images/UCONN_Color.png",
+                "name": "IMAGE_UCONN_COLOR_LOGO",
+                "type": "png"
             }
         ]
     },
@@ -46,10 +52,11 @@
     "shortName": "UCONN",
     "targetPlatforms": [
         "aplite",
-        "basalt"
+        "basalt",
+        "chalk"
     ],
     "uuid": "e5813053-6944-4fef-8648-9e63f870d774",
-    "versionLabel": "4.13",
+    "versionLabel": "5.00",
     "watchapp": {
         "watchface": true
     }
