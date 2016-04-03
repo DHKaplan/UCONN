@@ -4,10 +4,22 @@
         "configurable"
     ],
     "companyName": "WA1OUI",
+    "enableMultiJS": false,
     "longName": "UCONN",
     "projectType": "native",
     "resources": {
         "media": [
+            {
+                "file": "images/menu_icon-UCONN-BW.png",
+                "menuIcon": true,
+                "name": "IMAGE_MENU_ICON",
+                "type": "bitmap"
+            },
+            {
+                "file": "images/UCONN_Color.png",
+                "name": "IMAGE_UCONN_COLOR_LOGO",
+                "type": "bitmap"
+            },
             {
                 "file": "fonts/HelveNeuLig.ttf",
                 "name": "FONT_HELV_NEW_LIGHT_20",
@@ -34,17 +46,6 @@
                 "file": "fonts/Roboto-Condensed.ttf",
                 "name": "FONT_ROBOTO_CONDENSED_21",
                 "type": "font"
-            },
-            {
-                "file": "images/menu_icon-UCONN-BW.png",
-                "menuIcon": true,
-                "name": "IMAGE_MENU_ICON",
-                "type": "png"
-            },
-            {
-                "file": "images/UCONN_Color.png",
-                "name": "IMAGE_UCONN_COLOR_LOGO",
-                "type": "png"
             }
         ]
     },
@@ -56,7 +57,7 @@
         "chalk"
     ],
     "uuid": "e5813053-6944-4fef-8648-9e63f870d774",
-    "versionLabel": "5.00",
+    "versionLabel": "5.1",
     "watchapp": {
         "watchface": true
     }
