@@ -1,0 +1,74 @@
+{
+    "author": "WA1OUI",
+    "dependencies": {
+        "pebble-clay": "^1.0.1"
+    },
+    "keywords": [],
+    "name": "uconn",
+    "pebble": {
+        "capabilities": [
+            "configurable"
+        ],
+        "displayName": "UCONN",
+        "enableMultiJS": true,
+        "messageKeys": [
+            "DATE_FORMAT_KEY",
+            "BT_VIBRATE_KEY",
+            "LOW_BATTERY_KEY"
+        ],
+        "projectType": "native",
+        "resources": {
+            "media": [
+                {
+                    "file": "images/menu_icon-UCONN-BW.png",
+                    "menuIcon": true,
+                    "name": "IMAGE_MENU_ICON",
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/UCONN_Color.png",
+                    "name": "IMAGE_UCONN_COLOR_LOGO",
+                    "type": "bitmap"
+                },
+                {
+                    "file": "fonts/HelveNeuLig.ttf",
+                    "name": "FONT_HELV_NEW_LIGHT_20",
+                    "type": "font"
+                },
+                {
+                    "characterRegex": "[:0-9]",
+                    "file": "fonts/Roboto-Bold.ttf",
+                    "name": "FONT_ROBOTO_BOLD_SUBSET_49",
+                    "type": "font"
+                },
+                {
+                    "characterRegex": "[:0-9]",
+                    "file": "fonts/Roboto-Bold.ttf",
+                    "name": "FONT_ROBOTO_BOLD_SUBSET_40",
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/Roboto-Condensed.ttf",
+                    "name": "FONT_ROBOTO_CONDENSED_25",
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/Roboto-Condensed.ttf",
+                    "name": "FONT_ROBOTO_CONDENSED_21",
+                    "type": "font"
+                }
+            ]
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "aplite",
+            "basalt",
+            "chalk"
+        ],
+        "uuid": "190a7ab6-f858-4775-bafa-f6f21c8803d5",
+        "watchapp": {
+            "watchface": true
+        }
+    },
+    "version": "6.0.0"
+}
