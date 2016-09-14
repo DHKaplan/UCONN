@@ -1,7 +1,7 @@
 {
     "author": "WA1OUI",
     "dependencies": {
-        "pebble-clay": "^1.0.1"
+        "pebble-clay": "^1.0.2"
     },
     "keywords": [],
     "name": "uconn",
@@ -63,12 +63,13 @@
         "targetPlatforms": [
             "aplite",
             "basalt",
-            "chalk"
+            "chalk",
+            "diorite"
         ],
         "uuid": "e5813053-6944-4fef-8648-9e63f870d774",
         "watchapp": {
             "watchface": true
         }
     },
-    "version": "6.0.0"
+    "version": "7.0.0"
 }
