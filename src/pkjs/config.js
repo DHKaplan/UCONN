@@ -82,7 +82,7 @@ module.exports = [
             },
             {
                 "type": "text",
-                "defaultValue": "UCONN By WA1OUI V6.0"
+                "defaultValue": "UCONN By WA1OUI V7.1"
             }
         ]
     }
